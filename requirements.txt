@@ -7,3 +7,4 @@ pylint==2.8.3
 redis==3.5.3
 requests==2.25.0
 flower==0.9.5
+braintree==4.5.0
