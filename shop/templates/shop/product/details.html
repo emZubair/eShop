@@ -1,5 +1,6 @@
 {% extends 'shop/base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block title %}{{product.name}}{% endblock%}
 
@@ -15,7 +16,7 @@
             {{ cart_add_form }}
             {% csrf_token %}
 
-            <input type="submit" value="Add to Cart">
+            <input type="submit" value='{% trans "Add to Cart" %}'>
         </form>
         {{product.description|linebreaks}}
     </div>
